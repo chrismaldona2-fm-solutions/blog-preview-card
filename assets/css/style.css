@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype-variations')
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+:root {
+    font-size: 12px;
+    letter-spacing: 0;
+    --yellow: #f4d04e;
+    --grey-950: #111111;
+    --grey-500: #6b6b6b;
+    --white: #ffffff;
+
+
+    --text-preset-1: 800 24px/150% 'Figtree', sans-serif;
+    --text-preset-2: 500 16px/150% 'Figtree', sans-serif;
+    --text-preset-3: 500 14px/150% 'Figtree', sans-serif;
+    --text-preset-3-bold: 800 14px/150% 'Figtree', sans-serif;
+
+}
+
+.container {
+    background: var(--yellow);
+    min-height: 100vh;
+    display: flex;
+}
+
+.card {
+    margin: auto;
+    width: 90%;
+    max-width: 384px;
+    padding: 2rem;
+    background: var(--white);
+    border: solid 1px var(--grey-950);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    box-shadow: 8px 8px 0 var(--grey-950);
+}
+
+.card .img {
+    cursor: pointer;
+    aspect-ratio: 337/202;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.card .content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.content .category {
+    cursor: pointer;
+
+    font: var(--text-preset-3-bold);
+    color: var(--grey-950);
+
+    background: var(--yellow);
+    padding: 4px 1rem;
+    border-radius: 4px;
+}
+
+.content .date {
+    cursor: pointer;
+    font: var(--text-preset-3);
+    color: var(--grey-950);
+}
+
+.content .title {
+    cursor: pointer;
+    font: var(--text-preset-1);
+    color: var(--grey-950);
+}
+
+.content .subtitle {
+    cursor: pointer;
+    font: var(--text-preset-2);
+    color: var(--grey-500);
+}
+
+.card .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.profile .avatar img {
+    width: 32px;
+    aspect-ratio: 1/1;
+}
+
+
+.profile .username span {
+    font: var(--text-preset-3-bold);
+}
