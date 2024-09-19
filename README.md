@@ -3,7 +3,7 @@ This repository contains the solution to a Frontend Mentor project that involves
 
 ## Live Demo
 You can view the live version of the project on GitHub Pages at:
-[GitHub Pages URL]()
+[GitHub Pages URL](https://chrismaldona2-fm-solutions.github.io/blog-preview-card/)
 
 ## Preview
-![QR Code Card Screenshot](preview.jpg)
+![Blog Preview Card Screenshot](preview.jpg)
