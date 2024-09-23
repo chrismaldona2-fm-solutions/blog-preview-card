@@ -26,7 +26,7 @@
 
 }
 
-.container {
+.main {
     background: var(--yellow);
     min-height: 100vh;
     display: flex;
@@ -48,21 +48,21 @@
     box-shadow: 8px 8px 0 var(--grey-950);
 }
 
-.card .img {
+.card__image {
     cursor: pointer;
     aspect-ratio: 337/202;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.card .img img {
+.card__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center; 
 }
 
-.card .content {
+.card__info {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
     gap: 1rem;
 }
 
-.content .category {
+.card__category {
     cursor: pointer;
 
     font: var(--text-preset-3-bold);
@@ -81,25 +81,25 @@
     border-radius: 4px;
 }
 
-.content .date {
+.card__date {
     cursor: pointer;
     font: var(--text-preset-3);
     color: var(--grey-950);
 }
 
-.content .title {
+.card__title {
     cursor: pointer;
     font: var(--text-preset-1);
     color: var(--grey-950);
 }
 
-.content .subtitle {
+.card__subtitle {
     cursor: pointer;
     font: var(--text-preset-2);
     color: var(--grey-500);
 }
 
-.card .profile {
+.card__author {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -107,12 +107,12 @@
     overflow: hidden;
 }
 
-.profile .avatar img {
+.card__author-avatar img {
     width: 32px;
     aspect-ratio: 1/1;
 }
 
 
-.profile .username span {
+.card__author-username {
     font: var(--text-preset-3-bold);
 }
